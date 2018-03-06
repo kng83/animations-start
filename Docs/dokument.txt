@@ -1,0 +1,2 @@
+animacje dodajemy do dekoratora komponentu
+[@divState] - w html tak bindujemy element animowany
