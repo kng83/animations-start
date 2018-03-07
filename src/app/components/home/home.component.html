@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Animations</h1>
+      <button class="btn btn-primary" (click)="onAnimate()">Animate!</button>
+      <hr>
+      <div
+        style="width: 100px ;height: 100px"
+        [@divState]="state"
+        (@divState.start)="animationStarted($event)"
+        (@divState.done)="animationEnded($event)"
+      >
+      </div>
+      <br>
+    </div>
+    <hr>
+  </div>
+</div>
+<div class="container">
+  <p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+  <p>lorem ipsum </p><p>lorem ipsum </p><p>lorem ipsum </p>
+</div>

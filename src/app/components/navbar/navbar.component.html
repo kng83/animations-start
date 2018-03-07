@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" (click)="onAnimate()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse "
+    [ngClass]="{show:showMenu}"
+    (@navState.done)="onAnimate($event)"
+    [@navState]="state"
+    >
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/home">Home</a>
+      <a class="nav-item nav-link" routerLink="/anime">Anime</a>
+      <a class="nav-item nav-link" routerLink="/rect">Rect</a>
+      <a class="nav-item nav-link" routerLink="/sec-nav">SecNav</a>
+      <a class="nav-item nav-link ">Other</a>
+    </div>
+  </div>
+</nav>

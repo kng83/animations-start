@@ -30,7 +30,7 @@ export class MyAnime implements AnimationTriggerMetadata {
 
     const newTrigger = new MyAnime();
     newTrigger.name = name;
-    console.log(newTrigger.createTrigger());
+  //  console.log(newTrigger.createTrigger());
     return newTrigger.createTrigger();
   }
 
