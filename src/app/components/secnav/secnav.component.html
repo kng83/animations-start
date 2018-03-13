@@ -42,7 +42,16 @@
       <a class="nav-item nav-link">Anime</a>
       <a class="nav-item nav-link">Rect</a>
       <a class="nav-item nav-link">SecNav</a>
-      <a class="nav-item nav-link">Other</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" (click)="showTestMenu=!showTestMenu" >Test Menu</a>
+        <div [(dropToggle)]="showTestMenu" class="dropdown-menu">
+          <a class="dropdown-item" routerLinkActive="isActive" routerLink="/test" >Test</a>
+          <a class="dropdown-item" routerLink="/carousel" >Karuzela</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="isActive" routerLink="/panel">Panel</a>
+      </li>
     </div>
   </div>
 </nav>

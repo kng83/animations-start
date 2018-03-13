@@ -12,6 +12,7 @@ import {RectComponent} from './components/rect/rect.component';
 import {SecnavComponent} from './components/secnav/secnav.component';
 import {SecnavDirective} from './components/secnav/secnav.directive';
 import { AnimeNavDirective } from './components/secnav/anime-nav.directive';
+import {DropDownDirective} from './components/secnav/dropdown.directive.';
 
 
 const routes: Route[] = [
@@ -31,7 +32,8 @@ const routes: Route[] = [
     HomeComponent,
     SecnavComponent,
     SecnavDirective,
-    AnimeNavDirective
+    AnimeNavDirective,
+    DropDownDirective
   ],
   imports: [
     BrowserModule,

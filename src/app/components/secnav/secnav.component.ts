@@ -9,6 +9,7 @@ export class SecnavComponent implements OnInit {
   showElement = false;
   classChanger = false;
   showSecond = false;
+  showTestMenu = false;
 
 
   constructor() {
